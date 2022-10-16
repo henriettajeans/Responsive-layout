@@ -1,21 +1,23 @@
+@use "variables" as v;
+@use "mixins" as m;
+
 body{
-    background-color: aquamarine;
+    background-color: v.$bg-color;
+    margin: 0 auto;
+    width: 100%;
+    height: 100vh;
+    border: 5px solid blue;
+    $color-secondary-grey: #BDC3C7;
+
+
+
     article{
         width: 200px;
         height: 50vh;
         background-color: black;
         position: absolute;
     }
-    // Color variables
 
-$color-secondary-grey: #BDC3C7;
-
-$color-primary-blue: #8DA7BE;
-$color-secondary-bluelight: #80CED7;
-$color-primary-dark: #36393B;
-
-$color-white: #fff;
-$color-black: #000;
 
 // Navigation Parts
 
@@ -25,7 +27,7 @@ $color-black: #000;
   }
 
   &__button {
-    background-color: $color-secondary-grey;
+    background-color: v.$color-secondary-grey;
     height: 7rem;
     width: 7rem;
     position: fixed;
@@ -33,7 +35,7 @@ $color-black: #000;
     left: 6rem;
     border-radius: 50%;
     z-index: 2000;
-    box-shadow: 0 1rem 3rem rgba($color-black, .1);
+    box-shadow: 0 1rem 3rem rgba(v.$color-black, .1);
     text-align: center;
     cursor: pointer;
   }
@@ -45,7 +47,7 @@ $color-black: #000;
     position: fixed;
     top: 6.5rem;
     left: 6.5rem;
-    background-image: radial-gradient($color-primary-blue, $color-secondary-bluelight);
+    background-image: radial-gradient(v.$color-primary-blue, v.$color-secondary-bluelight);
     z-index: 1000;
     transition: transform .8s cubic-bezier(0.86, 0, 0.07, 1);
   }
@@ -96,7 +98,7 @@ $color-black: #000;
       &:hover,
       &:active {
         background-position: 100%;
-        color: $color-primary-blue;
+        color: v.$color-primary-blue;
         transform: translateX(1rem);
       }
   }
@@ -120,7 +122,7 @@ $color-black: #000;
     &::after {
         width: 3rem;
         height: 3px;
-        background-color: $color-primary-dark;
+        background-color: v.$color-primary-dark;
         display: inline-block;
     }
 
