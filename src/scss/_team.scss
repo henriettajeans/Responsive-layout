@@ -1,0 +1,48 @@
+@use "variables" as v;
+@use "mixins" as m;
+
+.main__container{
+    margin: 0 auto;
+    height: 100%;
+    width: 50%;
+    display: flex;
+    //flex-wrap: wrap;
+    justify-content: center;
+    border: 5px solid chocolate;
+    display: flex;
+    flex-direction: column;
+    //align-items: inherit;
+    @include m.desktop{
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    &__box{
+        width: 70%;
+        height: 100px;
+        background-color: grey;
+        float: inline-start; 
+        display: flex;
+        // flex-wrap: wrap;
+        justify-content: center;
+        margin: 20px;
+        padding: 20px;
+        
+        margin-top: 200px;
+        @include m.desktop{
+            display:flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+       
+     
+      &__text{
+        width: 95%;
+        padding-left: 30px;
+        
+        background-color: aqua;
+        padding: 20px;
+      }
+    }
+  }
