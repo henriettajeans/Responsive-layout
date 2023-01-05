@@ -1,30 +1,37 @@
 @use "variables" as v;
 @use "mixins" as m;
 
-.main__container{
-    height: 100%;
-    width: 100vw;
-    flex-wrap: wrap;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-
-    
-    @include m.desktop{
+.team{
+  height: 100%;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  @include m.desktop{
         
-        flex-wrap: wrap;
-        flex-direction: row;
-      
-    }
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    
+  
+}
+.main__container{
+align-items: center;
+
+   
     &__title{
       justify-content: center;
+      @include m.desktop{
+        justify-content: center;
+      }
     }
     
     &__box{
         width: 80%;
         height: 100%;
         float: inline-start;
+        justify-content: center;
         margin: 20px;
         padding: 20px;
         @include m.desktop{
@@ -35,12 +42,14 @@
         &__img{
           width: 100%;
           height:100%;
+          justify-content: center;
           
 
           &__src{
             height: 150px;
             width:150px;
             border-radius: 50%;
+            justify-content: center;
             @include m.desktop{
               height: 20%;
               width: 20%;
@@ -56,6 +65,8 @@
         border-radius: 0.8rem;
         background-color: lightgrey;
         padding: 20px;
+        justify-content: center;
       }
     }
   }
+}
