@@ -22,28 +22,28 @@ header{
     -moz-background-size: cover;
     -o-background-size: cover;
   }
-  // .top-nav{
-  //   margin: auto;
-  //   display: flex;
-  //   flex-direction: column;
-  //   align-items: end;
+  .top-nav{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
   
-  //   #menu-toggle{
-  //   margin:auto;
-  //   display: flex;
-  //   flex-direction: row;
-  //   justify-content: end;
-  //   }
-  //   .menu-button-container{
-  //     margin:auto;
-  //   }
-  //   .menu-button{
-  //     margin: 0;
-  //     display: flex;
-  //     flex-direction: row;
-  //     justify-content: end;
-  //   }
-  // }
+    #menu-toggle{
+    margin:auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    }
+    .menu-button-container{
+      margin:auto;
+    }
+    .menu-button{
+      margin: 0;
+      display: flex;
+      flex-direction: row;
+      justify-content: end;
+    }
+  }
   
   .desc__container{
     display: flex;
@@ -51,7 +51,7 @@ header{
     justify-content: center;
     align-items: center;
     text-align: center;
-    margin-top: 30%;
+    margin-top: 30vh;
     &__title{
       width: 50%;
       font-size: 1.5em;
@@ -63,17 +63,17 @@ header{
       color: white;
     }
   }
-  #arrow{
+  #arrow__white{
     display: flex;
     justify-content: center;
     align-items: end;
     color: white;
+    margin-top: 200px;
+    @include m.desktop{
+      margin-top: 200px;
+    }
   }
 }
-
-
-
-
 footer{
     width: 100%;
     height: 100%;
@@ -86,22 +86,23 @@ footer{
     @include m.desktop{
       display:flex;
       flex-direction: row;
-      justify-content: center;
+      align-items: flex-start;
     }
-    
     .footer__p {
       display: flex;
       flex-direction: column;
+      justify-content: center;
+      margin-left: 75%;
       margin-top: 40px;
-      width: 400px;
-      align-items: center;
+      width: 100%;
+      @include m.desktop{
+        margin-left: 10%;
+      }
     }
-
       p {
         color: papayawhip;
-        
+        text-align: left;
       }
-
       #footer__p__icon{
         color: white;
         margin-right: 10;
