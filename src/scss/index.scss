@@ -5,7 +5,8 @@
 body{
     margin: 0 auto;
     width: 100%;
-    height: 100vh;
+    height: 100%;
+    scroll-behavior: smooth;
   }
     
 
@@ -65,7 +66,7 @@ header{
   #arrow{
     display: flex;
     justify-content: center;
-    align-items: flex-end;
+    align-items: end;
     color: white;
   }
 }
@@ -77,20 +78,18 @@ footer{
     width: 100%;
     height: 100%;
     background-color: (v.$color-black, .1);
-    //position: absolute;
-    min-height:50px;
     background:black;
-    bottom: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-bottom: 20px;
     @include m.desktop{
       display:flex;
       flex-direction: row;
       justify-content: center;
     }
     
-    .footer-first {
+    .footer__p {
       display: flex;
       flex-direction: column;
       margin-top: 40px;
@@ -101,6 +100,11 @@ footer{
       p {
         color: papayawhip;
         
+      }
+
+      #footer__p__icon{
+        color: white;
+        margin-right: 10;
       }
 }
 
