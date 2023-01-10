@@ -12,43 +12,27 @@
 
     <header>
         <div class="hero-image">
-
-        <div class="navigation"> 
-            <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
-      
-            <label for="navi-toggle" class="navigation__button">
+        <div class="navigation" id="home"> 
+            <!-- <label for="navi-toggle" class="navigation__button">
                 <span class="navigation__icon">&nbsp;</span>
             </label>
-      
-            <div class="navigation__background">&nbsp;</div>
-      
+       -->
+            <!-- <div class="navigation__background">&nbsp;</div>
+       -->
             <nav class="navigation__nav">
                 <ul class="navigation__list">
-                    <li class="navigation__item"><a href="#link__header" class="navigation__link">Home</a></li>
-                    <li class="navigation__item"><a href="#link__project" class="navigation__link">Project</a></li>
-                    <li class="navigation__item"><a href="#link__about" class="navigation__link">About</a></li>
+                    <li class="navigation__list__item"><a href="#home" class="navigation__list__item__link" id="list__color">Hem</a></li>
+                    <li class="navigation__list__item"><a href="#about" class="navigation__list__item__link" id="list__color">Om</a></li>
+                    <li class="navigation__list__item"><a href="#contact" class="navigation__list__item__link" id="list__color">Kontakt</a></li>
                 </ul>
             </nav>
         </div>
-        
-        <!-- <section class="top-nav">
-            <input id="menu-toggle" type="checkbox" />
-            <label class="menu-button-container" for="menu-toggle">
-              <div class="menu-button"></div>
-            </label>
-            <ul class="menu">
-              <li>Hem</li>
-              <li>Om</li>
-              <li>Kontakt</li>
-            </ul>
-        </section> -->
-        <!-- <h2>Resize window to collapse menu</h2> -->
         <section class="desc__container">
             <h1 class="desc__container__title">Welcome to nature</h1>
             <p class="desc__container__firstLine">A journey through time and sheep</p>
             <p class="desc__container__firstLine">To see how ... cotton ... is mage, made I mean...</p>
         </section>
-        <a href="index.html#team">
+        <a href="#about">
             <i class="fa-sharp fa-solid fa-circle-down fa-xl" id="arrow__white"></i>
         </a>
         </div>
@@ -57,7 +41,7 @@
     
 
     <main>
-        <section class="team" id="team">
+        <section class="team" id="about">
             <h2 class="team__title">Träffa laget</h2>
             <section class="main__container">
             <article class="main__container__box">
@@ -102,12 +86,12 @@
                 </p>
             </article>
         </section>
-        <a href="index.html#footer">
+        <a href="#contact">
             <i class="fa-sharp fa-solid fa-circle-down fa-xl" id="arrow__black"></i>
         </a>
     </section>
     </main>
-    <footer id="footer">
+    <footer id="contact">
         <article class="footer__p">
             <p>Tegel Consulting AB</p>
             <p>Agatvägen 18</p>
