@@ -2,34 +2,25 @@
 .navigation{
     display: flex;
     justify-content: end;
-    // background-color: lightgray;
-    // opacity: 0.6;
     height: 10vh;
-    position:relative;
-    &__background{
-        position: absolute;
-        width: 100%;
-        height: 10vh;
-        background-color: white;
-        opacity: 0.4;
-    }
+    background-color: rgba(255, 255, 255, 0.33);
+    
     
     &__list{
         margin-top: 4vh;
         list-style: none;
         display: flex;
-    align-items: center;
-    gap: 2em;
-    padding-right: 50px;
-        
+        align-items: center;
+        gap: 2em;
+        padding-right: 50px;
+
     &__item{
         font-size: 1em;
         color: white;
-            text-decoration: none;
            @include m.desktop{
             font-size: 1.4em;
            }
-    }
+        }
     }
 }
 #list__color{
