@@ -56,7 +56,6 @@ footer{
     background:black;
     display: flex;
     flex-direction: column;
-    align-items: center;
     padding-bottom: 20px;
     @include m.desktop{
       display:flex;
@@ -66,8 +65,7 @@ footer{
     .footer__p {
       display: flex;
       flex-direction: column;
-      justify-content: center;
-      margin-left: 75%;
+      align-items: center;
       margin-top: 40px;
       width: 100%;
       @include m.desktop{
